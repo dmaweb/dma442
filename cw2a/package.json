@@ -1,0 +1,24 @@
+{
+  "name": "f2",
+  "version": "1.0.0",
+  "description": "starter",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Field 2 Design",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-svgstore": "^1.0.0",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^1.5",
+    "gulp-util": "^2.2.0"
+  },
+  "dependencies": {
+    "bourbon": "^4.2.7"
+  }
+}
