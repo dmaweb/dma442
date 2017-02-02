@@ -7,7 +7,28 @@
 	"devDependencies": {
 		"browser-sync": "^2.9.11",
 		"gulp": "^3.9.0",
+		"gulp-cli": "^1.2.1",
 		"gulp-autoprefixer": "^3.1.0",
-		"gulp-sass": "^2.1.0"
+		"gulp-sass": "^2.1.0",
+        "gulp-sourcemaps": "^2.1.0"
 	}
 }
+
+/*
+--to install locally, open terminal, type or copy/paste:
+cd /Volumes/THAWSPACE/dma442-master
+--or 
+cd whatever/the/path/is/to/your/dma442/folder
+--and hit enter.
+--Then type
+sudo npm install
+--and wait until it's done.
+--Then type
+cd cw3b
+--or
+cd whatever folder
+--and hit enter.
+--then type
+gulp
+--and hit enter. Boom.
+*/
