@@ -2,13 +2,14 @@
 To install, download and unzip to your computer, or clone using Terminal or Github desktop.
 Open Terminal, and type:
 
-cd
+`cd`
 
-Then drag the folder onto the Terminal window. The path to your folder will be inserted after cd
+Then drag the folder onto the Terminal window. The path to your folder will be inserted after cd.
+
 Now type
 
-npm install
+`npm install`
 
 Wait a few seconds, and when it's all done, type
 
-npm run gulp
+`npm run gulp`
