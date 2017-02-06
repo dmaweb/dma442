@@ -1,8 +1,12 @@
 {
-    "name": "basic",
+    "name": "DMA442 local development",
     "version": "1.0.0",
-    "description": "A basic starter package for building websites with Sass and BrowserSync",
-    "author": "DMA442",
+    "description": "A basic starter package for building websites with Sass and BrowserSync. To run, open the containing directory in a terminal/command line",
+    "author": "dmaweb",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dmaweb/dma442.git"
+    },
     "license": "MIT",
     "devDependencies": {
         "browser-sync": "^2.9.11",
