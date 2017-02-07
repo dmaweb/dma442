@@ -1,5 +1,5 @@
 {
-    "name": "DMA442 local development",
+    "name": "dma442",
     "version": "1.0.0",
     "description": "A basic starter package for building websites with Sass and BrowserSync. To run, open the containing directory in a terminal/command line",
     "author": "dmaweb",

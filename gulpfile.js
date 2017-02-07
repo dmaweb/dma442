@@ -12,7 +12,7 @@ var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%'] };
 /* tasks */
 gulp.task('sass', function() {
 	return gulp
-		.src('style.scss')
+		.src('./**/*.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass(sassOptions).on('error', sass.logError))
 		.pipe(autoprefixer(autoprefixerOptions))
@@ -23,8 +23,8 @@ gulp.task('sass', function() {
 
 
 gulp.task('watch', function() {
-	gulp.watch("*.scss", ['sass']);
-    gulp.watch("*.html").on('change', browserSync.reload);
+	gulp.watch("./**/*.scss", ['sass']);
+    gulp.watch("./**/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('browser-sync', function() {
