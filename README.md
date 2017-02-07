@@ -4,7 +4,7 @@ Open Terminal, and type:
 
 `cd`
 
-Then drag the folder onto the Terminal window. The path to your folder will be inserted after cd.
+Then drag the DMA442 folder onto the Terminal window. The path to your folder will be inserted after cd.
 
 Now type
 
@@ -13,3 +13,5 @@ Now type
 Wait a few seconds, and when it's all done, type
 
 `npm run gulp`
+
+Now when you make changes to your .html or .scss files, the browser will reload.
