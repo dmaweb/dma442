@@ -10,6 +10,19 @@ var sassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%'] };
 
 /* tasks */
+
+gulp.task('browser-sync', ['sass'], function() {
+	browserSync.init({
+		 reloadDelay: 100,
+		server: {
+			baseDir: './'
+		}
+	});
+	gulp.watch("./**/*.scss", ['sass']);
+  gulp.watch("./**/*.html").on('change', browserSync.reload);
+});
+
+
 gulp.task('sass', function() {
 	return gulp
 		.src('./**/*.scss')
@@ -22,18 +35,9 @@ gulp.task('sass', function() {
 });
 
 
-gulp.task('watch', function() {
-	gulp.watch("./**/*.scss", ['sass']);
-    gulp.watch("./**/*.html").on('change', browserSync.reload);
-});
 
-gulp.task('browser-sync', function() {
-	browserSync.init({
-		server: {
-			baseDir: './'
-		}
-	});
-});
+
+
 
 /* default task, if you just type gulp in the terminal */
-gulp.task('default', ['sass', 'watch', 'browser-sync']);
+gulp.task('default', ['browser-sync']);
