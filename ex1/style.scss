@@ -10,7 +10,6 @@ body {
 }
 
 .wrapper {
-    position:relative;
     max-width: 1200px;
     margin: 0 auto;
     background:#5E7E97;
@@ -21,19 +20,32 @@ header {
     text-align: center;
 }
 
+
 aside,
 .main {
     float: left;
-    padding:1rem;
-    width:50%;
+    padding:0 1rem;
 }
 
 aside a, .main a, footer a {
     color:#fff;
 }
 
+
+
 .main {
+    max-width: 800px;
     background:#124268;
+}
+
+aside {
+    width: 200px;
+}
+
+ul.widget {
+    padding: 1em;
+    border: 1px solid #777;
+    border-radius: 1em;
 }
 
 header img {
@@ -41,26 +53,14 @@ width:100%;
     height:auto;
 }
 footer {
-    padding:1rem;
         background:#5E7E97;
-    width:100%;
+    padding:1rem;
 
 }
-
 footer,
 nav {
     text-align: center;
     clear: both;
-}
-
-footer {
-
-color:#fff;
-}
-
-.sociallinks img {
-/*    float:right;*/
-    vertical-align:middle;
 }
 
 
@@ -68,13 +68,8 @@ color:#fff;
     aside, .main {
         float:none;
         width:100%;
+        padding:1rem;
     }
-}
-
-.clearfix:after {
-    display:table;
-    content:"";
-    clear:both;
 }
 
 .largepic img {
