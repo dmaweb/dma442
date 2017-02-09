@@ -5,23 +5,29 @@
 }
 
 body {
+<<<<<<< HEAD
   background: pink;
   font-family: sans-serif;
+=======
+  background: green;
+  font-family: serif;
+>>>>>>> origin/master
 }
 
 .wrapper {
-  background: #fff;
+  background: purple;
+  background: yellow;
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 1rem;
+  max-width: 120px;
+  padding: 4rem;
+  border: solid;
+  border-radius: 25px;
 }
 
 header {
-  height: 128px;
+  height: 120px;
 }
 
 header h1 {
   margin-top: 1em;
 }
-
-/*# sourceMappingURL=style.css.map */
