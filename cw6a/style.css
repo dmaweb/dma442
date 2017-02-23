@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display:flex;
+	flex-direction: column;
+
+}
+
+header, footer {
+	background:#ccc;
+}
+
+header, .content, footer {
+	padding:1rem;
+}
+
+.content {
+	flex:1;
+}
