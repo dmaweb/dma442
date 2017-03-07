@@ -55,7 +55,7 @@ footer {
 
 .row > div {
     flex: 1;
-    height: 400px;
+    height: 370px;
     padding: 1rem;
     position:relative;
 }
@@ -77,3 +77,16 @@ footer {
 p {
     margin-top: .5em;
 }
+
+.biga {
+    right: -10px;
+    top: -50px;
+}
+
+.bigp {
+    left:30px;
+    top:-40px;
+}
+
+
+
