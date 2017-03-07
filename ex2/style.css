@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position:relative;
 }
 
 body {
@@ -15,11 +16,11 @@ body {
 .wrapper {
     width: 800px;
     margin: auto;
+
 }
 
 .giant {
     font-size: 400px;
-    line-height:0;
 }
 .absolute {
         position:absolute;
