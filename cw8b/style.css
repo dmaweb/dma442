@@ -81,3 +81,7 @@ header h1, nav#primary {
     height:42px;
     margin:1rem;
 }
+
+nav .fa:before {
+    line-height: 20px;
+}
