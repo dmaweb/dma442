@@ -2,15 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" /> 
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:800" rel="stylesheet">
-    <title>CW7b: Parallax template</title>
+    <title>CW8b: Hamburger Menu</title>
 </head>
 
 <body>
+  <nav class="hamburger"><i class="fa fa-bars"></i></nav>
    <a href="#top" id="backToTop"><i class="fa fa-arrow-up"></i></a>
 
     <header id="top">
@@ -60,6 +61,7 @@
     <footer> @copyright 2017 </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <script>
+          /* page scroll animation */
     $('a[href*="#"]:not([href="#"])').click(function() {
   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
     var target = $(this.hash);
@@ -72,6 +74,17 @@
     }
   }
 });
+               /* END page scroll animation */
+          
+        
+          
+          $('nav.hamburger').click(function(){
+              
+             // $('nav#primary').toggleClass('reveal');
+              $('nav#primary').slideToggle();
+            
+          });
+          
     </script>
 </body>
 
