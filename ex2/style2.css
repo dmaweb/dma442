@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     position:relative;
+    -webkit-print-color-adjust: exact;
+
 }
 
 body {
@@ -43,7 +45,7 @@ div.amikoletter {
     background:#F5F1ED;
     line-height:496px;
     text-align:center;
-    
+
 }
 
 div.amikoparagraph {
@@ -63,7 +65,7 @@ div.playfairletter {
     font-family:'playfair display', serif;
     left:400px;
     top:500px;
-    
+
     font-size:500px;
     color:#A99985;
     background:#F5F1ED;
@@ -103,5 +105,9 @@ footer .social a {
     text-decoration:none;
 }
 
+/*h1, h2 {        letter-spacing:0.4em;*/
 
 
+.kernme {
+  letter-spacing:-2em;
+}
