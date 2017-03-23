@@ -1,7 +1,7 @@
 {
-  "name": "benstarter",
+  "name": "dmaweb",
   "version": "1.0.0",
-  "description": "a starter framework for basic sites",
+  "description": "basic code for running sass and browsersync",
   "main": "gulpfile.js",
   "scripts": {
     "gulp": "gulp"
