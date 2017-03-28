@@ -2,7 +2,7 @@
   "name": "dmaweb",
   "version": "1.0.0",
   "description": "basic code for running sass and browsersync",
-  "main": "gulpfile.js",
+  "main": "./**/gulpfile.js",
   "scripts": {
     "gulp": "gulp"
   },
