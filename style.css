@@ -1,7 +1,5 @@
 nav {
   color: green; }
-  nav li {
-    display: inline-block; }
 
 body {
   background: green; }
@@ -12,7 +10,7 @@ body {
   box-sizing: border-box; }
 
 .box_branded {
-  background: orange;
+  background: pink;
   width: 300px;
   height: 100px; }
 
