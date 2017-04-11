@@ -18,9 +18,9 @@ body {
 
 .box1 {
   /*
-  width:80vw;
-      height:80vh;
-  */
+width:80vw;
+    height:80vh;
+*/
   width: 6rem;
   height: 6rem;
   background: red; }
@@ -37,5 +37,3 @@ body {
 
 .box2 p {
   color: #fff; }
-
-/*# sourceMappingURL=style.css.map */
