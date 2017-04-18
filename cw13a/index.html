@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>CW13a : Simple jQuery AJAX example</title>
-	<link rel="stylesheet" href="style.css">
-<script src="http://code.jquery.com/jquery-latest.min.js">
-	
-</script>
-	<script>
-	$(document).ready(function(){
-	$("button#jack_and_the_beanstalk").click(function(){
-    $.ajax({url: "stories.txt", success: function(result){
-        $("#story_box").html(result);
-    }});
-});
-	});
-</script>
+    <meta charset="UTF-8">
+    <title>CW13a : Simple jQuery AJAX example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button#jack_and_the_beanstalk").click(function () {
+                $.ajax({
+                    url: "stories.txt"
+                    , success: function (result) {
+                        $("#story_box").html(result);
+                    }
+                });
+            });
+            
+            $("button#hansel_and_gretel").click(function () {
+                $.ajax({
+                    url: "hansel.txt"
+                    , success: function (result) {
+                        $("#story_box").html(result);
+                    }
+                });
+            });
+            
+        });
+    </script>
 </head>
+
 <body>
-<h1>Kids' Stories</h1>
-<button id="jack_and_the_beanstalk">Jack and the Beanstalk</button>
-<div id="story_box">
-</div>
+    <h1>Kids' Stories</h1>
+    <button id="jack_and_the_beanstalk">Jack and the Beanstalk</button>
+    <button id="hansel_and_gretel">Hansel and Gretel</button>
+    <div id="story_box"> </div>
 </body>
+
 </html>

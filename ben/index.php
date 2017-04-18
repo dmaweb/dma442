@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Ben's Bagels</title>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
-</head>
-<body>
-  <nav>
-   <?php wp_list_pages(); ?>
-   </nav>
+<?php get_header(); ?>
    <h1>
     <?php 
     the_title();
@@ -24,5 +14,9 @@ if ( have_posts() ) {
 } // end if
 ?>
 
-</body>
-</html>
+<aside>
+    <?php dynamic_sidebar('widgets'); ?>
+    
+</aside>
+
+<?php get_footer(); ?>
