@@ -17,6 +17,13 @@
 
 <aside>
     <?php dynamic_sidebar('widgets'); ?>
+    <h2>Testimonials</h2>
+<?php $loop = new WP_Query( array( 'post_type' => 'testimonials', 'posts_per_page' => 5 ) ); ?>
+<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+<?php the_title(); ?>
+<?php the_content(); ?>
+<?php endwhile; wp_reset_query(); ?>
+
 </aside>
 
 <?php get_footer(); ?>
