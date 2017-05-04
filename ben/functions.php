@@ -1,5 +1,11 @@
 <?php
 
+add_theme_support('post-thumbnails');
+add_image_size('banner', 1300, 500, true);
+add_image_size('page_bg', 1200, 1200, true);
+add_image_size('headshot_small', 200, 200, true);
+add_image_size('headshot_large', 400, 400, true);
+
 //enable menus and create a location for our primary menu
 register_nav_menus(array('primary' => 'Primary Nav')); 
 
