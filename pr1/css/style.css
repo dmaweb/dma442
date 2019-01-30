@@ -1,0 +1,25 @@
+/* Coolors Exported Palette - coolors.co/bada55-de6b48-f4b9b2-daedbd-7dbbc3 */
+/* HSL */
+/* RGB */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; }
+
+body {
+	font-family: 'Oswald', sans-serif;
+	padding: 12px;
+	background-image: url(../img/metal.jpg); }
+
+h1 {
+	font-size: 200pt;
+	color: #bad954; }
+
+.funky {
+	display: inline-block;
+	font-size: 5rem;
+	color: #de6b48;
+	transform: rotate(10deg);
+	text-shadow: 0 0 0.25em rgba(0, 0, 0, 0.9); }
+
+/*# sourceMappingURL=style.css.map */

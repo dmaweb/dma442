@@ -1,0 +1,46 @@
+/* Coolors Exported Palette - coolors.co/bada55-de6b48-f4b9b2-daedbd-7dbbc3 */
+
+/* HSL */
+$badass_green: hsla(74%, 64%, 59%, 1);
+$color2: hsla(14%, 69%, 58%, 1);
+$color3: hsla(6%, 75%, 83%, 1);
+$color4: hsla(84%, 57%, 84%, 1);
+$color5: hsla(187%, 37%, 63%, 1);
+
+/* RGB */
+$color1: rgba(186, 218, 85, 1);
+$color2: rgba(222, 107, 72, 1);
+$color3: rgba(244, 185, 178, 1);
+$color4: rgba(218, 237, 189, 1);
+$color5: rgba(125, 187, 195, 1);
+
+
+
+
+
+
+// reset browser defaults
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    padding:12px; // layout
+    background-image: url(../img/metal.jpg); // img
+}
+
+h1 {
+    font-size:200pt; // typography property
+    color:$badass_green; // color property
+}
+
+.funky {
+    display:inline-block;
+    font-size:5rem;
+    color:$color2; // color property
+    transform:rotate(10deg);
+    text-shadow:0 0 .25em rgba(0,0,0,0.9); // image property
+}

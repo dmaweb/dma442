@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body.layout1 {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 25% auto 25%;
+	grid-template-rows: 100px 50px auto 50px;
+	grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer";
+}
+
+header {
+	background: red;
+	grid-area:header;
+}
+
+nav {
+	background: green;
+	grid-area:nav;
+	ul {
+		display:flex;
+	}
+
+}
+
+main {
+	background: orange;
+		grid-area:main;
+}
+
+aside {
+	background: blue;
+		grid-area:aside;
+
+}
+
+footer {
+	background: yellow;
+		grid-area:footer;
+
+}

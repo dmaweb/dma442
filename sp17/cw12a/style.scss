@@ -1,0 +1,43 @@
+@import "vars";
+@import "nav";
+@import "layout";
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.box_branded {
+    background:$color_brand;
+    width:300px;
+    height:100px;
+}
+.box1 {
+/*
+width:80vw;
+    height:80vh;
+*/
+    
+    width:6rem;
+    height:6rem;
+    
+    background:red;
+}
+
+.box2 {
+    width:72pt;
+    height:72pt;
+    background:blue;
+    p {
+        color:#fff;
+    }
+    @media (max-width:500px) {
+        background:yellow;
+    }
+}
+
+.box2 p {
+    color:#fff;
+}
