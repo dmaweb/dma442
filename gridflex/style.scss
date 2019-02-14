@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.df {
+    display:flex;
+}
+
+.aic {
+    align-items: center;
+}
+
+@media (max-width:500px) {
+    .fdcr {
+        flex-direction: column;
+    }
+}
+
+.jcsa {
+    justify-content: space-around;
+}
+
+.dg {
+    display:grid;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+//    grid-auto-flow: column;  
+    grid-template-columns: 25% auto;
+    grid-template-rows: 
+        auto 
+        auto 
+        auto 
+        auto; 
+    grid-template-areas:
+        "ben ben"
+        "tg tg"
+        "alex kris"
+        "jerry jerry"
+}
+
+@media (max-width:500px) {
+    body {
+    grid-template-columns:auto auto;
+    grid-template-rows:auto auto;
+        grid-template-areas:
+            "ben ben"
+            "tg jerry"
+            "alex kris"
+    }
+}
+
+
+header {
+    background: red;
+    grid-area:jerry;
+}
+
+nav {
+    background: orange;
+    grid-area:tg;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+main {
+    background: purple;
+    grid-area:kris;
+}
+
+aside {
+    background: yellow;
+    grid-area:alex;
+}
+
+footer {
+    background: pink;
+    grid-area:ben;
+}
+
+
