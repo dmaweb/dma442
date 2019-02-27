@@ -27,7 +27,18 @@ gulp.task('sass', function() {
 		.pipe(browserSync.stream());
 });
 
-gulp.task('default', ['sass', 'serve']);
+
+const minify = require('gulp-minify');
+ 
+gulp.task('compress', function() {
+  gulp.src(['js/*.js'])
+    .pipe(minify())
+    .pipe(gulp.dest('js'))
+});
+
+
+
+gulp.task('default', ['sass', 'compress', 'serve']);
 
 /* note: 
 Command to run if you don't have admin access, e.g. lab builds, is 
