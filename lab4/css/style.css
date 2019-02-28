@@ -19,7 +19,8 @@ h1 {
 
 nav {
 	display: flex;
-	justify-content: space-around; }
+	flex-direction: column;
+	align-items: center; }
 	nav a {
 		text-decoration: none;
 		padding: .5em;
@@ -32,5 +33,38 @@ section.content {
 		margin: 0 .5rem 0 1rem; }
 	section.content main {
 		margin: 0 1rem 0 .5rem; }
+
+/* hamburger button */
+#hamburger {
+	background: red; }
+
+nav {
+	background: blue; }
+
+nav div {
+	display: none; }
+
+/* media queries */
+/* desktop context */
+@media (min-width: 1100px) {
+	.menu {
+		/* optimize user interface in wide screens */
+		flex-direction: row; } }
+
+@media (min-width: 501px) and (max-width: 1099px) {
+	/* optimize user interface in tablet */
+	aside, main {
+		flex: 1; } }
+
+@media (max-width: 500px) {
+	/* optimize user interface in phone */
+	section.content {
+		flex-direction: column; }
+	.menu {
+		display: none;
+		flex-direction: column; } }
+
+.visible {
+	display: flex !important; }
 
 /*# sourceMappingURL=style.css.map */
