@@ -1,0 +1,100 @@
+{ // Emmet preferences // List of all available preferences: // http://docs.emmet.io/customization/preferences/ 
+	"preferences": { 
+		"filter.commentAfter": "<!-- <%= attr(\"id\", \"/#\") %> <%= attr(\"class\", \"/.\") %> -->",
+		"sass.propertyEnd": ";"
+	},
+	"syntaxProfiles": {
+		"html" : {
+		"filters" : "html, c",
+		"self_closing_tag": false
+		},
+		"njx" : {
+		"filters" : "html, c",
+		"self_closing_tag": false
+		}
+	},
+
+	"snippets": {
+		"css": {
+			"snippets": {
+				"qd": "@media (min-width: \\$desktop) {\n\t|\n}",
+				"qp": "@media (max-width: \\$phone) {\n\t|\n}",
+				"qm": "@media (max-width: \\$mobile) {\n\t|\n}",
+				"fs": "font-size:|;\n",
+				"tal": "text-align:|left;\n",
+				"bs": "border:|solid;",
+				"f1": "flex:|1;\n",
+				// grid snippets
+				"ac": "align-content: center;",
+				"acc": "align-content: center;",
+				"ace": "align-content: end;",
+				"acs": "align-content: start;",
+				"acsa": "align-content: space-around;",
+				"acsb": "align-content: space-between;",
+				"acse": "align-content: space-evenly;",
+				"acstr": "align-content: stretch;",
+				"ai": "align-items: center;",
+				"aic": "align-items: center;",
+				"aie": "align-items: end;",
+				"ais": "align-items: start;",
+				"aistr": "align-items: stretch;",
+				"dig": "display: inline-grid;",
+				"dg": "display: grid;",
+				"dsg": "display: subgrid;",
+				"gac": "grid-auto-columns: 50px;",
+				"gar": "grid-auto-rows: 50px;",
+				"gaf": "grid-auto-flow: dense;",
+				"gafc": "grid-auto-flow: column;",
+				"gafd": "grid-auto-flow: dense;",
+				"gafr": "grid-auto-flow: row;",
+				"gcg": "grid-column-gap: 20px;",
+				"gg": "grid-gap: 20px;",
+				"grg": "grid-row-gap: 20px;",
+				"gtc": "grid-template-columns: 1fr;",
+				"gtr": "grid-template-rows: 1fr;",
+				"jc": "justify-content: center;",
+				"jcc": "justify-content: center;",
+				"jce": "justify-content: end;",
+				"jcs": "justify-content: start;",
+				"jcsa": "justify-content: space-around;",
+				"jcsb": "justify-content: space-between;",
+				"ji": "justify-items: center;",
+				"jic": "justify-items: center;",
+				"jie": "justify-items: end;",
+				"jis": "justify-items: start;",
+				"jistr": "justify-items: stretch;",
+				"als": "align-self: center;",
+				"alsc": "align-self: center;",
+				"alse": "align-self: end;",
+				"alss": "align-self: start;",
+				"alsstr": "align-self: stretch;",
+				"gra": "grid-area: <name>;",
+				"gc": "grid-column: 1 / 2",
+				"gce": "grid-column-end: 2;",
+				"gcs": "grid-column-start: 1;",
+				"grr": "grid-row: 1 / 2;",
+				"gre": "grid-row-end: 2;",
+				"grs": "grid-row-start: 1;",
+				"js": "justify-self: center;",
+				"jsc": "justify-self: center;",
+				"jse": "justify-self: end;",
+				"jss": "justify-self: start;",
+				"jsstr": "justify-self: stretch;"		
+			}
+		},
+
+		"html": {
+     "abbreviations": {
+       "row": "<row></row>",
+       "columns": "<columns small='12' large='12'></columns>",
+       "col": "<columns small='12' large='12'></columns>",
+       "container": "<container></container>",
+       "con": "<container></container>",
+       "callout": "<callout></callout>",
+       "center": "<center></center>",
+       "expander": "<th class='expander'></th>",
+       "ex": "<th class='expander'></th>",
+     }
+    }
+	}
+}

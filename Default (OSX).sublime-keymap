@@ -1,0 +1,15 @@
+[
+    { 
+        "keys": ["super+shift+t"], "command": "terminus_open", "args": {
+            "config_name": "Default",
+            "cwd": "${file_path:${folder}}"
+        }
+    },
+
+        { 
+        "keys": ["super+j"], "command": "show_overlay", "args": {
+        		"overlay": "goto",
+        		"text": ":"
+        }
+    }
+]
