@@ -1,11 +1,6 @@
-<?php 
-include("header.php");
-?>
+<!-- add a $pageTitle variable  -->
+<!-- include header.php -->
 
-	Hello World
-	<?php 
-echo "howdy";
-$password = "secretPass";
-	?>
-</body>
-</html>
+<h1>Lab 6</h1>
+
+<!-- include footer.php -->
