@@ -15,6 +15,16 @@
 <body>
 	<nav>
 		<!-- add a "current" class to the page the user is currently visiting -->
-		<a href="index.php" class="current">Home Page</a>
-		<a href="password.php">Password</a>
+		<a href="index.php" <?php
+		   if($pageTitle=="Home") {
+		   echo 'class="current"';
+		   }
+		   
+		   ?>>Home Page</a>
+		<a href="password.php" <?php
+		   if($pageTitle=="PIN") {
+		   echo 'class="current"';
+		   }
+		   
+		   ?>>Password</a>
 	</nav>
