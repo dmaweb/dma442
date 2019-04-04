@@ -1,21 +1,49 @@
 <!-- create a password variable $correctPassword -->
-
+<?php
+$correctPassword = "pickles";
+?>
 <!-- check if a password was submitted by the user. If true, store it in a variable called $submittedPassword -->
-
+<?php
+if(isset($_POST['password'])) {
+	$submittedPassword = $_POST['password'];
+}
+?>
 <!-- add a pageTitle variable -->
+<?php
+$pageTitle = "PIN";
+?>
 <!-- include header.php -->
-	<h1>PIN number</h1>
+<?php
+include("header.php");
+?>
+<h1>PIN number</h1>
 <!-- Check if submittedPassword was set; i.e., the user has submitted a password If true, compare $submittedPassword with $correctPassword -->
-
-<!-- If $submittedPassowrd and $correctPassword are the same, show the PIN -->
+<?php
+if(isset($submittedPassword)) {
+	if($submittedPassword == $correctPassword) {
+		?>
 <h2>Your PIN is 55555</h2>
-<!-- If they are not the same, tell the user to try again -->
+<?php }
+	else {
+		?>
 <h2>Sorry, wrong password. Try again.</h2>
-<!-- Show the form if the user hasn't entered a password yet, OR if the password was incorrect -->
-<form action="">
+<?php }
+	}
+
+?>
+<?php if((!isset($submittedPassword)) || ($submittedPassword != $correctPassword)) {
+	?>
+<form action="" method="post">
 	<label for="password">Password:</label>
 	<input type="password" name="password">
 	<input type="submit">
-	</form>
+</form>
+<?php	
+}
+?>
+
 <!-- include footer.php -->
+<?php
+include("footer.php");
+?>
 <!-- discuss POST vs. GET methods -->
